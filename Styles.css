@@ -6,3 +6,7 @@ a.button {
     text-decoration: none;
     color: initial;
 }
+body {background:#100B0B}
+div {text-align: center}
+table, td {border:none}
+h1,h2,h3,p {color:#726666}
