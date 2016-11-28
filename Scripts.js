@@ -6,7 +6,7 @@ if (document.getElementById('radWin').check == true){
 }
 
 function SubmitAnswers() {
-    var parent = document.getElementById("element-test");
+    var parent = document.getElementById("choice");
     var newElement = document.createElement('input');
     newElement.setAttribute('type', 'radio');
     parent.appendChild(newElement);
@@ -19,5 +19,13 @@ function replaceViaElements() {
         parent.removeChild(parent.lastChild);
     }
 
-
 }
+
+localStorage.setItem("Choice #1 (Win Case)", "win");
+document.getElementById("radWin").innerHTML = localStorage.getItem("Choice #1 (Win Case)");
+
+localStorage.setItem("Choice #2 (Lose Case)", "lose");
+document.getElementById("radLose").innerHTML = localStorage.getItem("Choice #2 (Lose Case)");
+
+localStorage.setItem("Choice #3 (Lose Case)", "lose2");
+document.getElementById("radLose2").innerHTML = localStorage.getItem("Choice #3 (Lose Case)");
